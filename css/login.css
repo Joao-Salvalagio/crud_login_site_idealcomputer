@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #181818;
+    --card-bg: #282828;
+    --text-color: #f0f0f0;
+    --accent-color: #00cfff;
+    --accent-hover: #00a3cc;
+    --border-color: #3d3d3d;
+    --shadow-color: rgba(0, 207, 255, 0.3);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--shadow-color);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
